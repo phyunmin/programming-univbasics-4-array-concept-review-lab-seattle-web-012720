@@ -4,7 +4,11 @@ def find_element_index(array, value_to_find)
   while counter < array.length {
     if(array[counter] == value_to_find){
       return counter
-    } else if(counter == array.length-1)
+    } elsif(counter == array.length-1){
+      return nil
+    } else {
+      counter+=1
+    }
   }
 end
 

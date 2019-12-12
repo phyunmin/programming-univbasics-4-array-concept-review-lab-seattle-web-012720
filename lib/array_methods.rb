@@ -16,10 +16,11 @@ def find_max_value(array)
   # Add your solu
   counter = 0
   max_value = array[counter]
-  while counter<array.length do
-    if(array[counter]>=max_value)
+  while counter < array.length do
+    if(array[counter] >= max_value)
       max_value = array[counter]
     end
+    counter+=1
   end
   return max_value
 end
